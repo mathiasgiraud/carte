@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "photo_cadre1",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Layer": "0", "Text": null }, "geometry": { "type": "LineString", "coordinates": [ [ 55.454361280841823, -20.876161836236069 ], [ 55.479821660797306, -20.876390028139305 ], [ 55.479651200909274, -20.89332197927174 ], [ 55.454187968791238, -20.89309358541632 ], [ 55.454361280841823, -20.876161836236069 ] ] } }
+]
+}

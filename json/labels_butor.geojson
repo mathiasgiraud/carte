@@ -1,0 +1,363 @@
+{
+  "type": "FeatureCollection",
+  "name": "labels_butor",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Numero": "1",
+        "Text": "Déconstruire les logements en façade sur la rue Léopold Rambaud"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47085851430893,
+          -20.88579848621642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Numero": "2",
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "Text": "Créer une nouvelle façade au quartier  urbanisme transitoire   tertiaire",
+        "marker-symbol":"star"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47066807746887,
+          -20.885793474278824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Numero": "2",
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "Text": "Créer une nouvelle façade au quartier  urbanisme transitoire   tertiaire",
+        "marker-symbol":"star"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47158271074295,
+          -20.885836075742997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Numero": "2",
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "Text": "Créer une nouvelle façade au quartier  urbanisme transitoire   tertiaire",
+        "marker-symbol":"star"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.472143292427056,
+          -20.885873665260174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Numero": "3",
+        "Text": "Diversifier l'offre en logement",
+        "marker-color": "#009",
+        "marker-size": "medium",
+        "marker-symbol":"star"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47034353017807,
+          -20.886094190238058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#009",
+        "Text": "Diversifier l'offre en logement",
+        "Numero": "3",
+        "marker-size": "medium",
+        "marker-symbol":"star"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4710328578949,
+          -20.886214476453112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#009",
+        "Text": "Diversifier l'offre en logement",
+        "Numero": "3",
+        "marker-size": "medium",
+        "marker-symbol":"star"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47207623720169,
+          -20.886512685612374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#009",
+        "Text": "Diversifier l'offre en logement",
+        "Numero": "3",
+        "marker-size": "medium",
+        "marker-symbol":"star"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47160416841507,
+          -20.886893590567837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#008000",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Numero": "4",
+        "Text": "Requalifier l'espace public de coeur d'îlot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47154784202576,
+          -20.886367340045705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Text": "Clarifier le foncier pour mieux irriguer le coeur d'îlot",
+        "Numero": "5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.471901893615716,
+          -20.88671316202518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ffff00",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Text": "Requalifier le parvis de la Fabrick et faire aboutir le cheminement jusqu'au littoral",
+        "Numero": "6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.471166968345635,
+          -20.886898602468705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Numero": "7",
+        "Text": "Favoriser les traversées des axes primaires (Léopold Rambaud et RN2)",
+        "marker-color": "#00ff00",
+        "marker-size": "medium",
+        "marker-symbol":"star"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.470390468835824,
+          -20.885668175784733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00ff00",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Numero": "7",
+        "Text": "Favoriser les traversées des axes primaires (Léopold Rambaud et RN2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47257378697395,
+          -20.88575588474157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#008000",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Numero": "8",
+        "Text": "Relier le quartier  au littoral et au coeur vert familial par l'accompagnement de la ravine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47259658575057,
+          -20.886552780916354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#804000",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Text": "Résorber l'insalubrité dans le parc privé",
+        "Numero": "9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.46974003314972,
+          -20.886289655288593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#23dada",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Text": "Rénover la piscine",
+        "Numero": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47218084335327,
+          -20.886906120319686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#008000",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Numero": "11",
+        "Text": "Rattacher le mail au littoral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47044277191162,
+          -20.8852622079457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#c0c0c0",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Text": "Apaiser les circulations sur l'avenue De Lattre de Tassigny",
+        "Numero": "12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47091081738472,
+          -20.886978792859836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ff8000",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Text": "Offrir un espace public sans voiture aux lycéens",
+        "Numero": "13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.46967029571533,
+          -20.88678082275409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "Recomposer une façade urbaine sur l'avenue",
+        "Numero": "14",
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol":"star"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.471617579460144,
+          -20.887096572419175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#c4ff88",
+        "marker-size": "medium",
+        "marker-symbol":"star",
+        "Text": "Valoriser et conforter le parcours sportif , lien inter quartiers",
+        "Numero": "15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4714298248291,
+          -20.884938936474068
+        ]
+      }
+    }
+  ]
+}

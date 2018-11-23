@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mapbox Animation</title>
+</head>
+
+<body>
+<div class="map">
+  <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+  <style> #map { position:absolute; top: 0  ; height: 100%; bottom: 0; width:100%; } </style>
+  <div id='map'></div>
+  <script>
+  L.mapbox.accessToken = 'pk.eyJ1IjoiZm9nZ2VuZXJhdGlvbiIsImEiOiIzMTkwM2M2ZWFiOWY1MWMwNjEyN2U4ZGY3Zjk0NzcyYyJ9.wxbegFYZyA_xc9-gvbxRNA';
+    var geojson = [{
+      "type":"FeatureCollection",
+      "features":[{
+        "type":"Feature",
+        "properties":{
+          "id":"marker-ibj5t4pn0",
+          "title":"GIFTY GRAPHIC CENTRE LLC",
+          "description":"P.O BOX 27743\nHAMDAN STREET \nABU DHABI UAE.",
+          "marker-size":"large",
+          "marker-color":"#1087bf",
+          "marker-symbol":""
+        },
+        "geometry":{
+          "coordinates":[54.370914,24.494715],
+          "type":"Point"
+        },
+        "id":"cibj6i7ov03txn9luwm4nkg8j"
+      }],
+      "id":"foggeneration.mjad8fmd"
+    }];
+      
+    var map = L.mapbox.map('map', 'mapbox.streets')
+      .setView([24.495, 54.371], 17)
+      .featureLayer.setGeoJSON(geojson);
+      
+      
+    var marker = L.marker([-73, 40], {
+      icon: L.mapbox.marker.icon({
+        "marker-symbol": "car",
+        'marker-color': '#f86767'
+      })
+    });
+
+    var px1 = 0.00001072072;
+    
+    // car 1; 
+    var lat11 = 24.4951567567;
+    var lon11 = 54.3657680541;
+
+    var lat12 = 24.49281963974;
+    var lon12 = 54.36770850442;
+
+    var lat13 = 24.494878018;
+    var lon13 = 54.3706888646;
+      
+      
+    // car 2; 
+    var lat21 = 24.4945135135;
+    var lon21 = 54.3750629183;
+    
+    var lat22 = 24.4968184683;
+    var lon22 = 54.3731117473;
+    
+    var lat23 = 24.4950495495;
+    var lon23 = 54.3705387745;
+    
+    marker.setLatLng( L.latLng( lat11, lon11 ) );
+    // movePath1(lat1, lat2, lon1, lon2)
+      
+    marker.setLatLng( L.latLng( (lat11+( 10 * px1)), (lon11-(-10 * px1))) );
+    // movePath1((lat13+( 10 * px1)), (lat12+0.0001608108), (lon13-( 20 * px1)), lon12, 100, function() {});
+    /*
+    */
+    // movePath1(lat12, lat13, lon12, lon13); 
+
+    moveCar(); 
+    setTimeout( function() { 
+      moveCar(); 
+    }, 44000);
+    
+    marker.addTo(map);
+    
+    function moveCar() { 
+      movePath1(lat11, lat12, lon11, lon12, 100, function() { 
+        movePath1(lat12, lat13, lon12, lon13, 100, function() { 
+          setTimeout(function() { 
+            movePath1((lat13+( 10 * px1)), (lat12+( 25 * px1)), (lon13-( 20 * px1)), (lon12+(10 * px1)), 100, function() {
+              movePath1((lat12+( 15 * px1)), (lat11+( 10 * px1)), (lon12+(10 * px1)), (lon11-(-10 * px1)), 100);
+            })
+          }, 500);
+        })
+      });
+      
+      setTimeout(function() { 
+        movePath1(lat21, lat22, lon21, lon22, 100, function() { 
+          movePath1(lat22, lat23, lon22, lon23, 100, function() { 
+            setTimeout(function() { 
+              movePath1((lat23-(15 * px1)), (lat22-(35 * px1)), lon23+(15 * px1), (lon22-(15 * px1)), 100, function() {
+                movePath1((lat22-(35 * px1)), (lat21-(35 * px1)), (lon22-(15 * px1)), (lon21-(15 * px1)), 100, function() {});
+              })
+            }, 500);
+          })
+        });
+      }, 21500);
+    }
+
+    function movePath1(fromLat, toLat, fromLon, toLon, time, callback) { 
+      var lat = 0;
+      var lon = 0;
+      lat = fromLat; 
+      lon = fromLon;
+      var intervalID = setInterval( function() { 
+        lat = lat - ((fromLat - toLat)/ (time/2));
+        lon = lon - ((fromLon - toLon)/ (time/2));
+        marker.setLatLng(L.latLng( lat, lon ));
+        if (((fromLat < toLat) && (lat > toLat)) ||
+           ((fromLat > toLat) && (lat < toLat))) {
+          console.log('stopped');
+          window.clearInterval(intervalID);
+          callback();
+         }
+      }, time);
+      
+    }
+     </script>
+  </div>
+</body>
+</html>
